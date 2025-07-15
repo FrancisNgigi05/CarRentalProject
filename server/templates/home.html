@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Mushroom Motors</div>
+            <div class="nav-links">
+                <button id="home-btn"><a href="/">Home</a></button>
+                <button id="login-btn"><a href="{{ url_for('login') }}">Login</a></but>
+                <button id="signup-btn"><a href="{{ url_for('signup') }}">Sign Up</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Ride</h1>
+            <p>Rent cars quickly, safely, and affordably with Mushroom Motors.</p>
+            <a href="{{ url_for('view_cars') }}" class="btn">Browse Cars</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Easy Booking</h3>
+            <p>Reserve your car in just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <h3>Wide Selection</h3>
+            <p>Choose from a variety of well-maintained vehicles.</p>
+        </div>
+        <div class="feature">
+            <h3>24/7 Support</h3>
+            <p>We're here whenever you need help.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CarRental. All rights reserved.</p>
+    </footer>
+</body>
+</html>
